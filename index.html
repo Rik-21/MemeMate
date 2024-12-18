@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemeMate</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" onclick="showSection('messages')">Messages</a>
+        <a href="#" onclick="showSection('groups')">Groups</a>
+        <a href="#">Search Friends</a>
+        <a href="#">Account</a>
+    </nav>
+
+    <!-- Message Section -->
+    <div id="messages" class="section active">
+        <div class="chat-container">
+            <!-- Chat Sidebar -->
+            <div class="chat-sidebar">
+                <h2>Chats</h2>
+                <input type="text" placeholder="Search or start a new chat" class="search-bar">
+                <div class="chat-list">
+                    <div class="chat-item">
+                        <div class="chat-info">
+                            <strong>Ram</strong>
+                            <p>Ram: Dharma is more important than any divine boon.</p>
+                        </div>
+                        <span class="chat-time">10-12-2024</span>
+                    </div>
+                    <div class="chat-item">
+                        <div class="chat-info">
+                            <strong>Sita</strong>
+                            <p>Sita: I would rather face any hardship than live without my love.</p>
+                        </div>
+                        <span class="chat-time">04:50 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Box -->
+            <div class="chat-box">
+                <div class="chat-header">
+                    <h3>Ram</h3>
+                </div>
+                <div class="chat-content" id="chat-content">
+                    <div class="message received">
+                        <p>Tentative date for exam is 26th September...</p>
+                        <br>
+                        <img src=".//images/meme1.png" alt="" class="small-image">
+                        <span>04:31 PM</span>
+                    </div>
+                    <div class="message sent">
+                        <p>Thanks & Regards<br></p>
+                        <img src=".//images/meme2.png" alt="" class="small-image">
+                        <span>09:54 PM</span>
+                    </div>
+                </div>
+                <div class="chat-footer">
+                    <input type="text" placeholder="Type a message...">
+                    <button>Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mood Circles Section -->
+    <!-- <h3>Choose your Mood:</h3>
+    <div class="circle-container">
+        <div class="circle red" title="Happy Mood">Happy</div>
+        <div class="circle blue" title="Sad Mood">Sad</div>
+        <div class="circle gray" title="Stressed Mood">Stressed</div>
+        <div class="circle orange" title="Excited Mood">Excited</div>
+        <div class="circle pink" title="Sweet Mood">Sweet</div>
+    </div> -->
+    <!-- Mood Circles Section -->
+<div class="circle-section">
+    <h3>Choose your Mood:</h3>
+    <div class="circle-container">
+        <div class="circle-item">
+            <div class="circle red"></div>
+            <p>Happy</p>
+        </div>
+        <div class="circle-item">
+            <div class="circle blue"></div>
+            <p>Sad</p>
+        </div>
+        <div class="circle-item">
+            <div class="circle green"></div>
+            <p>Stressed</p>
+        </div>
+        <div class="circle-item">
+            <div class="circle yellow"></div>
+            <p>Excited</p>
+        </div>
+        <div class="circle-item">
+            <div class="circle purple"></div>
+            <p>Sweet</p>
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

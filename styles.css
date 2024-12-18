@@ -1,0 +1,237 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    background-color: #202c33;
+    color: white;
+    padding: 10px;
+    justify-content: space-around;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: #2a3942;
+    border-radius: 5px;
+}
+.section {
+    display: none;
+    flex: 1;
+    padding: 20px;
+}
+.section.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Container */
+.chat-container {
+    display: flex;
+    height: 100%;
+}
+
+/* Sidebar */
+.chat-sidebar {
+    width: 30%;
+    background-color: #111b21;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #2a3942;
+}
+.chat-sidebar h2 {
+    padding: 10px;
+    text-align: center;
+    background-color: #202c33;
+}
+.search-bar {
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.chat-list {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+.chat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #2a3942;
+}
+.chat-item:hover {
+    background-color: #2a3942;
+    cursor: pointer;
+}
+
+/* Chat Box */
+.chat-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #0b141a;
+    color: white;
+}
+.chat-header {
+    background-color: #202c33;
+    padding: 15px;
+}
+.chat-content {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+.message {
+    max-width: 70%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.small-image {
+    width: 150px;
+    height: auto;
+}
+
+.received {
+    background-color: #202c33;
+    align-self: flex-start;
+}
+.sent {
+    background-color: #005c4b;
+    align-self: flex-end;
+}
+.message span {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+}
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    background-color: #202c33;
+}
+.chat-footer input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+.chat-footer button {
+    padding: 10px 20px;
+    background-color: #005c4b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chat-footer button:hover {
+    background-color: #00735c;
+}
+
+/* Mood Circles Section */
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.circle:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.circle.red { background-color: #FFD700; }  /* Happy */
+.circle.blue { background-color: #1E90FF; } /* Sad */
+.circle.gray { background-color: #696969; } /* Stressed */
+.circle.orange { background-color: #FF4500; } /* Excited */
+.circle.pink { background-color: #FFB6C1; } /* Sweet */
+
+
+/* Circle Section */
+.circle-section {
+    margin: 20px;
+    text-align: center;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between circles */
+    flex-wrap: wrap;
+}
+
+.circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px; /* Text size for mood labels */
+    color: #333; /* Text color */
+}
+
+.circle {
+    display: inline-block;
+    width: 60px; /* Adjusted size */
+    height: 60px; /* Adjusted size */
+    margin-bottom: 10px; /* Space between circle and label */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s; /* Smooth hover effects */
+}
+
+.circle:hover {
+    opacity: 0.8;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Circle Colors */
+.circle.red {
+    background-color: #FFD700; /* Bright Yellow for Happy */
+}
+
+.circle.blue {
+    background-color: #1E90FF; /* Deep Blue for Sad */
+}
+
+.circle.green {
+    background-color: #696969; /* Dark Gray for Stressed */
+}
+
+.circle.yellow {
+    background-color: #FF4500; /* Vibrant Red for Excited */
+}
+
+.circle.purple {
+    background-color: #FFB6C1; /* Soft Pink for Sweet */
+}
