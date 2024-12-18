@@ -96,7 +96,8 @@ To set up MemeMate on your local machine:
 ![Themes](./images/Mood_themes.png)
 
 ### **Mobile Interface**
-![Chat](./images/screenshot_app.png)
+<img src="./images/screenshot_app.png" alt="Chat" width="300" />
+
 
 ---
 
